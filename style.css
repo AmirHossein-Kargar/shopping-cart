@@ -12,12 +12,22 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+h1 {
+  font-size: 4rem;
+}
 /* ? Root */
 :root {
   --white-color: #fff;
   --black-color: #000;
   --primary-color: #fff7f1;
   --drop-shadow: drop-shadow(0 50px 20px #0009);
+}
+.btn {
+  padding: 2rem;
+  border: none;
+  font-family: "poppins";
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .container {
@@ -27,14 +37,12 @@ body {
   text-align: center;
   padding-top: 1rem;
 }
+/* ? Hedaer */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0;
-}
-.header__title {
-  font-size: 4rem;
 }
 .header__icon {
   position: relative;
@@ -59,6 +67,9 @@ body {
   top: 50%;
   right: -8px;
 }
+/* ? Hedaer */
+
+/* ? Products  */
 .list_product {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -98,3 +109,35 @@ body {
   border: 1px solid var(--black-color);
   color: var(--black-color);
 }
+/* ? Products  */
+
+.cart_tab {
+  width: 40rem;
+  background-color: #353432;
+  color: #eee;
+  position: fixed;
+  inset: 0 0 0 auto;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+}
+.cart_tab__title {
+  padding: 2rem;
+  margin: 0;
+  font-weight: 300;
+}
+.listcart {
+}
+.cart_tab_butoons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cart_tab_butoons__close {
+  background-color: var(--white-color);
+}
+.cart_tab_butoons__check {
+  background-color: #fde047;
+}
+/* .cart_tab_butoons__close,
+.cart_tab_butoons__check {
+  grid-row: 10;
+} */
