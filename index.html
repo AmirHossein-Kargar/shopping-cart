@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
-  <body>
+  <body class="">
     <div class="container">
       <header class="header">
         <h1 class="header__title">Product List</h1>
@@ -45,7 +45,20 @@
 
     <div class="cart_tab">
       <h1 class="cart_tab__title">Shopping cart</h1>
-      <div class="listcart"></div>
+      <div class="listcart">
+        <div class="item">
+          <div class="item__img">
+            <img src="images/1.png" alt="" />
+          </div>
+          <h2 class="item__title">name</h2>
+          <span class="item__total">$200</span>
+          <div class="quantity">
+            <span class="quantity__minus"><</span>
+            <span>1</span>
+            <span class="quantity__plus">></span>
+          </div>
+        </div>
+      </div>
       <div class="cart_tab_butoons">
         <button class="cart_tab_butoons__close btn">CLOSE</button>
         <button class="cart_tab_butoons__check btn">CHECK Out</button>
